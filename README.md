@@ -52,7 +52,7 @@ Placeholder — deploy to your preferred host (Forge, Vapor, shared PHP) and upd
 
 ## SEO-optimized repo description
 ```
-SkyDatum Aerial Survey — Laravel 13 + Filament 3 website, ERP & AI for an Colorado Front Range surveying drone service (topo, orthomosaics, volumetrics, chatbot).
+SkyDatum Aerial Survey — Laravel 13 + Filament 3 website, ERP & AI for an Austin surveying drone service (topo, orthomosaics, volumetrics, chatbot).
 ```
 
 ---

@@ -13,7 +13,7 @@ class AiService
   0 => 
   array (
     'q' => 'topographic mapping drone contours gcp rtk point cloud',
-    'a' => 'SkyDatum topographic flights use RTK/PPK with ground control to deliver CAD-ready contours and point clouds for Colorado Front Range design teams. Call (303) 555-0194.',
+    'a' => 'SkyDatum topographic flights use RTK/PPK with ground control to deliver CAD-ready contours and point clouds for Central Texas design teams. Call (512) 555-0138.',
   ),
   1 => 
   array (
@@ -43,7 +43,7 @@ class AiService
   6 => 
   array (
     'q' => 'schedule quote austin round rock san marcos georgetown cost price',
-    'a' => 'Call (303) 555-0194, use the contact form, or WhatsApp. We serve Denver, Round Rock, San Marcos, Georgetown, and Colorado Front Range. Pricing depends on acreage, GCPs, and processing rush.',
+    'a' => 'Call (512) 555-0138, use the contact form, or WhatsApp. We serve Austin, Round Rock, San Marcos, Georgetown, and Central Texas. Pricing depends on acreage, GCPs, and processing rush.',
   ),
   7 => 
   array (
@@ -128,7 +128,7 @@ class AiService
             return $best;
         }
 
-        return 'Thanks for reaching SkyDatum Aerial Survey. We provide topographic drone mapping, construction orthomosaics, corridor ROW surveys, stockpile volumetrics, as-built capture, and utility inspections across Colorado Front Range. Ask about scope, timelines, or scheduling—or call (303) 555-0194.';
+        return 'Thanks for reaching SkyDatum Aerial Survey. We provide topographic drone mapping, construction orthomosaics, corridor ROW surveys, stockpile volumetrics, as-built capture, and utility inspections across Central Texas. Ask about scope, timelines, or scheduling—or call (512) 555-0138.';
     }
 
     protected function callOpenAi(string $message, string $key): string
@@ -140,7 +140,7 @@ class AiService
                 'messages' => [
                     [
                         'role' => 'system',
-                        'content' => 'You are the SkyDatum Aerial Survey assistant for an Denver, TX surveying drone service. Be concise about topographic mapping, orthomosaics, corridor ROW, stockpile volumetrics, as-built capture, utility inspection, and scheduling. Never invent FAA approvals or survey licenses.',
+                        'content' => 'You are the SkyDatum Aerial Survey assistant for an Austin, TX surveying drone service. Be concise about topographic mapping, orthomosaics, corridor ROW, stockpile volumetrics, as-built capture, utility inspection, and scheduling. Never invent FAA approvals or survey licenses.',
                     ],
                     ['role' => 'user', 'content' => $message],
                 ],
@@ -160,7 +160,7 @@ class AiService
                 'contents' => [
                     [
                         'parts' => [
-                            ['text' => "SkyDatum Aerial Survey assistant (Denver / Colorado Front Range surveying drone service). Answer briefly:
+                            ['text' => "SkyDatum Aerial Survey assistant (Austin / Central Texas surveying drone service). Answer briefly:
 {$message}"],
                         ],
                     ],

@@ -28,7 +28,7 @@ class AdminPanelProvider extends PanelProvider
             ->login()
             ->brandName('SkyDatum Aerial')
             ->colors([
-                'primary' => Color::hex('#1B6CA8'),
+                'primary' => Color::hex('#0ea5e9'),
                 'gray' => Color::Slate,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')

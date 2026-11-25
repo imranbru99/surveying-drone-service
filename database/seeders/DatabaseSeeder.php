@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
             'company_email' => 'fly@skydatum.aero',
             'whatsapp' => '15125550138',
             'service_area' => 'Austin, Round Rock, San Marcos, Georgetown & Central Texas',
-            'tax_rate' => '8.31',
+            'tax_rate' => '8.25',
         ];
         foreach ($settings as $key => $value) {
             Setting::setValue($key, $value);

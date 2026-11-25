@@ -103,43 +103,49 @@ class SiteController extends Controller
     /** @return array<string, array<string, string>> */
     protected function serviceCatalog(): array
     {
-        return [
-            'orthomosaic-mapping' => [
-                'title' => 'Orthomosaic Mapping',
-                'summary' => 'Georeferenced site mosaics for planning, as-builts, and stakeholder reviews.',
-                'body' => 'AeroGrid plans nadir missions with the overlap and GSD your project needs, then processes a seamless orthomosaic tied to your CRS. Ideal for Denver and Front Range sites where planners, estimators, and owners need a true-to-scale aerial base map.',
-                'image' => 'https://images.unsplash.com/photo-1508444845599-5b89963bd43e?auto=format&fit=crop&w=1600&q=80',
-            ],
-            'topographic-drone-survey' => [
-                'title' => 'Topographic Drone Survey',
-                'summary' => 'Dense elevation products with contour-ready surfaces for civil design.',
-                'body' => 'We combine RTK airframes with surveyed GCPs to produce DSMs, DTMs, and contour-ready surfaces civil teams can import. Typical Front Range deliverables include GeoTIFF surfaces and accuracy checks against control.',
-                'image' => 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80',
-            ],
-            'construction-progress' => [
-                'title' => 'Construction Progress Captures',
-                'summary' => 'Repeatable flight lines that track earthwork and vertical progress week to week.',
-                'body' => 'Fixed flight lines and consistent processing settings make week-to-week comparisons honest. GCs and owners get orthos and cut/fill snapshots for Boulder and Colorado Springs jobsites.',
-                'image' => 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80',
-            ],
-            'stockpile-volumetrics' => [
-                'title' => 'Stockpile Volumetrics',
-                'summary' => 'Repeatable pile measurements for aggregate, spoil, and inventory reconciliation.',
-                'body' => 'Stockpile missions use dense coverage and a documented base method so volumes reconcile month to month. We deliver pile reports with cubic-yard totals and notes on shadows or vegetation that can bias the surface.',
-                'image' => 'https://images.unsplash.com/photo-1581094794329-adb0d0f1bf4b?auto=format&fit=crop&w=1600&q=80',
-            ],
-            'corridor-row-inspection' => [
-                'title' => 'Corridor / Utility ROW Inspection',
-                'summary' => 'Linear asset flights for utilities, pipelines, and transportation rights-of-way.',
-                'body' => 'Corridor missions capture ROW conditions with nadir and optional oblique passes. Deliverables help asset owners spot encroachment and vegetation pressure along Front Range corridors.',
-                'image' => 'https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=1600&q=80',
-            ],
-            'as-built-aerial' => [
-                'title' => 'As-Built Aerial Documentation',
-                'summary' => 'Closeout orthos and elevation products that freeze the built condition for the record set.',
-                'body' => 'When the job wraps, AeroGrid flies a closeout mission that documents the as-built condition for owners and insurers. Packages typically include orthomosaics, key elevations, and optional mesh exports.',
-                'image' => 'https://images.unsplash.com/photo-1579829366248-204fe8413f31?auto=format&fit=crop&w=1600&q=80',
-            ],
-        ];
+        return array (
+  'topographic-mapping' => 
+  array (
+    'title' => 'Topographic Drone Mapping',
+    'summary' => 'Survey-grade GCPs, dense point clouds, and CAD-ready contours for design teams.',
+    'body' => 'SkyDatum flies Central Texas sites with RTK/PPK workflows and ground control so civil engineers get contours and breaklines they can trust — not pretty pictures alone.',
+    'image' => 'https://images.unsplash.com/photo-1527979809429-b4bb5c0c0f1c?auto=format&fit=crop&w=1600&q=80',
+  ),
+  'construction-orthomosaic' => 
+  array (
+    'title' => 'Construction Progress Orthomosaics',
+    'summary' => 'Repeatable flight plans for weekly or monthly progress basemaps.',
+    'body' => 'GCs and owners compare week-over-week orthos in the same CRS. We lock flight lines and camera settings so change detection stays honest through the Austin build season.',
+    'image' => 'https://images.unsplash.com/photo-1531834685032-c34bfa9ee8b2?auto=format&fit=crop&w=1600&q=80',
+  ),
+  'corridor-row' => 
+  array (
+    'title' => 'Corridor & ROW Surveys',
+    'summary' => 'Linear mapping for roads, utilities, and right-of-way documentation.',
+    'body' => 'Long corridors need consistent altitude and overlap. SkyDatum delivers georeferenced mosaics and extracted centerlines for roadway and utility ROW packages.',
+    'image' => 'https://images.unsplash.com/photo-1464037866556-68135799b824?auto=format&fit=crop&w=1600&q=80',
+  ),
+  'stockpile-volumetrics' => 
+  array (
+    'title' => 'Stockpile Volumetrics',
+    'summary' => 'Cubic-yard inventories for aggregates, spoils, and quarry faces.',
+    'body' => 'We fly stockyards and pits, build surface models, and report volumes with the assumptions your auditors want documented — base surfaces included.',
+    'image' => 'https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=1600&q=80',
+  ),
+  'as-built-capture' => 
+  array (
+    'title' => 'As-Built Aerial Capture',
+    'summary' => 'Post-construction aerials for as-built plan overlays and closeout packages.',
+    'body' => 'When punch lists close, SkyDatum captures the site so as-built drawings and BIM models share the same aerial truth for Central Texas closeouts.',
+    'image' => 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80',
+  ),
+  'utility-inspection' => 
+  array (
+    'title' => 'Utility Corridor Inspection',
+    'summary' => 'Visual inspection flights for transmission, pipeline, and solar corridors.',
+    'body' => 'Pilots capture high-resolution stills and video along linear assets, tagging anomalies for field crews — faster than walking every mile in Texas heat.',
+    'image' => 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1600&q=80',
+  ),
+);
     }
 }
